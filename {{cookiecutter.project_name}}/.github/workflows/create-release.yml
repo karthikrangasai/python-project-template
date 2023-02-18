@@ -16,7 +16,7 @@ on:
           - premajor
           - major
           - prerelease.
-
+{% raw %}
 jobs:
   bump_version_and_create_release:
     runs-on: ubuntu-22.04
@@ -123,3 +123,4 @@ jobs:
           poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
           poetry build
           poetry publish
+{% endraw %}

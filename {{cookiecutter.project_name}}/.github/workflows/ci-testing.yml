@@ -34,7 +34,9 @@ jobs:
         uses: actions/cache@v3.2.2
         with:
           path: ".venv"
+{% raw %}
           key: ci-testing-${{ hashFiles('poetry.lock') }}
+{% endraw %}
 
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
