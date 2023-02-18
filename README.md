@@ -1,3 +1,3 @@
 # Python Project Template
 
-This template uses the `poetry` build system.
+This template uses the `poetry` package manager.
